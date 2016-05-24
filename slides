@@ -1,0 +1,119 @@
+# Intro
+
+  ## whoami
+
+  ## Where am I from?
+
+  ## Motivating information about what I do, why this stuff holds my interest etc. etc
+
+# Problem Space Description
+
+  ## Desirable traits of a web system
+
+    * ServerSide Rendering
+
+    * Common components between pages
+
+    * Common components between languages / servers
+
+    * Encapsulation of component knowledge
+
+  ## Language Complexity
+
+    ### NodeJS middleware servers
+
+  ## Project Complexity
+
+    ### One project, one codebase, one deploy target
+
+    ### One project, many codebases, many deploy targets
+
+    ### Many projects, many codebases, many many deploy targets
+
+# Solution Space Description
+
+  ## ReactJS + Webpack + SSR
+
+  ## AWS Lambda
+
+# Solution Description
+
+  ## Description of architecture
+
+    ### Describe registry
+
+      #### DynamoDB table storing name@version against s3 and lambda
+
+      #### Lambda function listening for SNS notification that new version is published
+
+    ### Describe module
+
+      #### Module runs renderizrjs-module init, what it does
+
+      #### Module is published, what happens ->
+
+        ##### Assets are bundled, bundles are pushed to s3
+
+        ##### Renderer is created, renderer is pushed to lambda
+
+        ##### SNS notification is published
+
+    ### Describe conductor
+
+      #### Lambda function that is consumed through API Gateway
+
+      #### Takes a JSON post request of components to render
+
+      #### Returns a list of components with markup and bundle locations
+
+  ## Describe total workflow
+
+  ## Features
+
+    * SSR - Universal
+
+    * Non-runtime specific
+
+    * Distributed
+
+    * Sharing common components between pages/services/sites
+
+  ## Show code of how each of the libs are consumed
+
+# Demo
+
+  ## Gif of publishing registry
+
+  ## Gif of publishing conductor
+
+  ## Gif of publishing module
+
+# Caveats, Takeaways and ToDo
+
+  ## Caveats
+
+    ### Latency
+
+    ### Sleepytime
+
+    ### Regional Support
+
+  ## Takeaways
+
+    ### Organisational overhead
+
+    ### How great the SW world is right now where distributed systems are such an accessible footgun
+
+  ## ToDo
+
+    * SCSS/CSS support
+
+    * CSS Modules support
+
+    * Validation of components interop
+
+    * Dynamic global requirements
+
+    * SystemJS ?
+
+# QnA
