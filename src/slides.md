@@ -1,9 +1,7 @@
 class: title
 
 # Jacob's Lambda
-
 &nbsp;
-
 ## Serverless Component Rendering a la carte
 
 ---
@@ -12,18 +10,13 @@ class: middle
 
 .left[
 # $ whoami
-
 ## Jacob Bass
 ]
 
 .right[
-
 ## @bassjacob
-
 ## bassjacob@gmail.com
-
 ## github.com/subshad
-
 ## http://jacobbass.net
 ]
 
@@ -37,16 +30,14 @@ class: middle, center
 class: middle
 
 # Tooling
-
 # Front End Ops
-
 # Developer Experience (DX)
 
 ---
 
 class: section
 
-# Project Complexity
+# FrontEnd Delivery Complexity
 
 ---
 
@@ -56,16 +47,6 @@ background-image: url('public/monolith.jpg')
 .right.white-title.dark-mask[
 # One project
 # One codebase
-]
-
----
-
-class: middle, image-background
-background-image: url('public/spaghetti.jpg')
-
-.right.white-title.dark-mask[
-# One project
-# Many codebases
 ]
 
 ---
@@ -134,9 +115,7 @@ class: section
 class: middle
 
 ## Reusable components between .red[pages]
-
 ## Reusable components between .red[languages]
-
 ## Components rendered on the .red[server] and .red[client]
 
 ---
@@ -146,7 +125,21 @@ background-image: url('public/lambda_react.svg')
 
 ---
 
+class: section
+
+# Why ReactJS?
+
+---
+
 class: center, middle
+
+# * Modularity
+# * Encapsulation
+# * Predicatbility
+
+---
+
+class: section
 
 # Why AWS Lambda?
 
@@ -154,7 +147,9 @@ class: center, middle
 
 class: center, middle
 
-# Why ReactJS?
+# * Scalable
+# * Distributed
+# * Stateless
 
 ---
 
@@ -172,19 +167,21 @@ class: section
 
 ---
 
-Registry
+### .top[RenderizrJS: Module]
+
+<img style="width: 95%" src="public/module.svg">
 
 ---
 
-Module
+### .top[RenderizrJS: Registry]
+
+<img style="width: 95%" src="public/registry.svg">
 
 ---
 
-Conductor
+### .top[RenderizrJS: Conductor]
 
----
-
-Example workflow
+<img style="width: 95%" src="public/conductor.svg">
 
 ---
 
@@ -196,13 +193,9 @@ class: section, center, middle
 
 class: center, middle
 
-## * Distributed
-
-## * SSR - Universal
-
-## * Non-runtime specific
-
-## * Reusable components between everything!
+# * Server Side Rendered
+# * Non-Runtime Specific
+# * Reusable Components
 
 ---
 
@@ -218,13 +211,11 @@ class: section
 
 ---
 
-class: center
+class: center, middle
 
-# Regional Support
-
-# Sleepytime
-
-# Latency
+# * Regional Support
+# * Sleep/Startup Time
+# * Latency
 
 ---
 
@@ -234,15 +225,12 @@ class: section
 
 ---
 
-class: center
+class: center, middle
 
-# CSS/SCSS and CSS Modules support
 
-# Validation of components interop
-
-# Dynamic global requirements
-
-# SystemJS ?
+# * CSS & CSS Modules
+# * Globals Extraction
+# * Tests :P
 
 ---
 
