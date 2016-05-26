@@ -78,7 +78,7 @@ class: section
 
 class: center, middle
 
-<img style="width: 60%" src="public/nope.gif">
+<img style="width: 100%" src="public/nope.gif">
 
 ---
 
@@ -167,23 +167,38 @@ class: section
 
 ---
 
-### .top[RenderizrJS: Module]
-
-<img style="width: 95%" src="public/module.svg">
-
----
-
-### .top[RenderizrJS: Registry]
-
-<img style="width: 95%" src="public/registry.svg">
+class: center, middle, image-background
+background-image: url('public/overview.svg')
 
 ---
 
-### .top[RenderizrJS: Conductor]
+class: center, middle
 
-<img style="width: 95%" src="public/conductor.svg">
+# RenderizrJS: Module
+## * JS Bundle -> S3
+## * Rendering Function -> Lambda
 
 ---
+
+class: center, middle
+
+# RenderizrJS: Registry
+## For each module and version, tracks:
+## * JS Bundle in S3
+## * Rendering Function in Lambda
+
+
+---
+
+class: center, middle
+
+# RenderizrJS: Conductor
+
+## * Renders each module with props
+## * Returns S3 location of each bundle
+
+---
+
 
 class: section, center, middle
 
