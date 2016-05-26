@@ -1,96 +1,98 @@
-class: center, middle
-background-color: #0A6C8A
+class: title
 
-# .white-title[Jacob's Lambda]
+# Jacob's Lambda
 
 &nbsp;
 
-## .white-title[Serverless Component Rendering a la carte]
+## Serverless Component Rendering a la carte
 
 ---
 
-class: right
+class: middle
 
-&nbsp;
-
+.left[
 # $ whoami
 
-&nbsp;
-
-&nbsp;
-
 ## Jacob Bass
+]
+
+.right[
+
+## @bassjacob
 
 ## bassjacob@gmail.com
 
 ## github.com/subshad
 
 ## http://jacobbass.net
----
-
-class: center, middle, inverse
-
-# The evolution of a codebase through a company
+]
 
 ---
 
-class: center, middle
+class: middle, center
 
-background-color: #99CC22
-
-# .white-title[What do codebases look like at the beginning of a project?]
+# Domain.com.au
 
 ---
 
-class: center, middle, image-background
+class: middle
+
+# Tooling
+
+# Front End Ops
+
+# Developer Experience (DX)
+
+---
+
+class: section
+
+# Project Complexity
+
+---
+
+class: middle, image-background
 background-image: url('public/monolith.jpg')
 
----
-
-class: center, middle, inverse
-
-background-color: #994422
-
-# What do projects look like after a couple of years?
+.right.white-title.dark-mask[
+# One project
+# One codebase
+]
 
 ---
 
-class: center, middle, image-background
-background-image: url('public/monolith.jpg')
-
----
-
-class: center, middle, image-background
+class: middle, image-background
 background-image: url('public/spaghetti.jpg')
 
+.right.white-title.dark-mask[
+# One project
+# Many codebases
+]
+
+---
+
+class: middle, image-background
+background-image: url('public/modularity.jpg')
+
+.right.white-title.dark-mask[
+# Many projects
+# Many codebases
+]
+
 ---
 
 class: center, middle, image-background
-background-image: url('public/microservices.png')
+background-image: url('public/microservices.jpg')
+
+.dark-mask.pull-left.white-title[
+## I know, I'll use microservices...
+]
 
 ---
 
-class: center, middle
-background-color: #4FAA33
+class: sub-section
 
-# .white-title[What happens to the frontend?]
-
----
-
-class: center
-
-# Component Modules
-
-<img style="position: absolute; width: 25%; top: 50%; left:50px" src="public/bower.png">
-<img style="position: absolute; width: 40%; top: 50%; right:50px" src="public/npm.svg">
-
----
-
-class: center, middle
-
-background-color: #AACCAA
-
-# .white-title[How do we server-side render JS on non-nodejs platforms?]
+# How do we server-side render JS on non-nodejs platforms?
 
 ---
 
@@ -100,11 +102,9 @@ class: center, middle
 
 ---
 
-class: center, middle
+class: sub-section
 
-background-color: #CCCC4F
-
-# .white-title[How do we update nested component dependencies?]
+# How do we update nested component dependencies?
 
 ---
 
@@ -114,25 +114,9 @@ class: center, middle
 
 ---
 
-class: center, middle
+class: sub-section
 
-background-color: #FFCCCC
-
-# .white-title[How do we get new versions on multiple production pages?]
-
----
-
-class: center, middle
-
-<img style="width: 70%" src="public/bennyhill.gif">
-
----
-
-class: center, middle
-
-background-color: #FF224F
-
-# .white-title[What do we do if something breaks?]
+# What do we do if something breaks?
 
 ---
 
@@ -142,71 +126,125 @@ class: center, middle
 
 ---
 
-class: center, middle, inverse
+class: section
 
-background-color: #AA224F
-
-# .white-title[What's next?]
+# What might a solution look like?
 
 ---
 
-class: center, middle
+class: middle
 
-<img style="width:100%" src="public/magic.gif">
+## Reusable components between .red[pages]
+
+## Reusable components between .red[languages]
+
+## Components rendered on the .red[server] and .red[client]
 
 ---
 
-class: center, middle, inverse
+class: center, middle, image-background
+background-image: url('public/lambda_react.svg')
 
-background-color: #AA224F
+---
 
-# .white-title[Renderizr]
+Why AWS Lambda?
+
+---
+
+Why ReactJS?
+
+---
+
+class: section
+
+# RenderizrJS
 
 &nbsp;
 
 &nbsp;
 
-## .white-title[When all you have is a lambda, everything starts to look stateless]
+&nbsp;
+
+## When all you have is a lambda, everything starts to look stateless
+
+---
+
+Registry
+
+---
+
+Module
+
+---
+
+Conductor
+
+---
+
+Example workflow
 
 ---
 
 class: center, middle
 
+# Features
 
-## * Server-Side Rendered
-## * Fault and Error Tolerant
-## * Versioned
-## * Easy to rollback
-## * Easy to mark as staging/unstable
+## * Distributed
 
----
+## * SSR - Universal
 
-class: center, middle, inverse
+## * Non-runtime specific
 
-# .white-title[How does it work?]
+## * Reusable components between everything!
 
 ---
 
-class: center, middle
+class: section
 
-<img style="width: 90%" src="public/diagram.svg">
-
----
-
-class: center, middle, inverse
-
-# .white-title[Demo]
+# Demo
 
 ---
 
-class: center, middle, inverse
+class: section
 
-# .white-title[Caveats and lessons learnt]
+# Caveats
 
 ---
 
-class: center, middle
+class: center
 
-background-color: #4F224F
+# Regional Support
 
-# .white-title[Questions?]
+# Sleepytime
+
+# Latency
+
+---
+
+class: section
+
+# ToDo
+
+---
+
+class: center
+
+# CSS/SCSS and CSS Modules support
+
+# Validation of components interop
+
+# Dynamic global requirements
+
+# SystemJS ?
+
+---
+
+class: section
+
+# QnA
+
+---
+
+class: center, middle, image-background
+background-image: url('public/ddd_sponsors.svg')
+
