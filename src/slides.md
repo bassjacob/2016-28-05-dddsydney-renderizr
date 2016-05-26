@@ -30,8 +30,7 @@ class: middle
 ---
 
 class: middle, center
-
-# Domain.com.au
+<img style="width: 95%" src="public/domain-logo.png">
 
 ---
 
@@ -90,7 +89,7 @@ background-image: url('public/microservices.jpg')
 
 ---
 
-class: sub-section
+class: section
 
 # How do we server-side render JS on non-nodejs platforms?
 
@@ -102,7 +101,7 @@ class: center, middle
 
 ---
 
-class: sub-section
+class: section
 
 # How do we update nested component dependencies?
 
@@ -114,7 +113,7 @@ class: center, middle
 
 ---
 
-class: sub-section
+class: section
 
 # What do we do if something breaks?
 
@@ -147,11 +146,15 @@ background-image: url('public/lambda_react.svg')
 
 ---
 
-Why AWS Lambda?
+class: center, middle
+
+# Why AWS Lambda?
 
 ---
 
-Why ReactJS?
+class: center, middle
+
+# Why ReactJS?
 
 ---
 
@@ -185,9 +188,13 @@ Example workflow
 
 ---
 
-class: center, middle
+class: section, center, middle
 
 # Features
+
+---
+
+class: center, middle
 
 ## * Distributed
 
