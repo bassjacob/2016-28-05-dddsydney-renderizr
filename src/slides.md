@@ -101,7 +101,6 @@ class: section
 ---
 
 class: center, middle
-
 <img style="width: 70%" src="public/throwingcomputer.gif">
 
 ---
@@ -172,7 +171,7 @@ background-image: url('public/overview.svg')
 
 ---
 
-class: center, middle
+class: center
 
 # RenderizrJS: Module
 ## * JS Bundle -> S3
@@ -181,24 +180,69 @@ class: center, middle
 ---
 
 class: center, middle
+<img style="width: 95%" src="public/module.svg">
+
+---
+
+class: center
 
 # RenderizrJS: Registry
 ## For each module and version, tracks:
 ## * JS Bundle in S3
 ## * Rendering Function in Lambda
 
-
 ---
 
 class: center, middle
+<img style="width: 95%" src="public/registry.svg">
+
+---
+
+class: center
 
 # RenderizrJS: Conductor
 
-## * Renders each module with props
+## * Renders each instance to html
 ## * Returns S3 location of each bundle
 
 ---
 
+```javascript
+  const components = {
+    a: {
+      name: "renderizr-module-example",
+      version: "0.0.1",
+      props: {
+        greeting: "hello",
+        target: "world"
+      }
+    },
+    b: ...
+  };
+```
+
+---
+
+```javascript
+{
+  // list of js bundles for each requested module
+  js: [ 'https://s3-ap-northeast-1...e.js' ],
+  html: {
+    // base-64 encoded rendered html strings
+    a: 'CiAgPHN...',
+    b: ...
+  }
+}
+
+```
+
+
+---
+
+class: center, middle
+<img style="width: 95%" src="public/conductor.svg">
+
+---
 
 class: section, center, middle
 
@@ -211,12 +255,6 @@ class: center, middle
 # * Server Side Rendered
 # * Non-Runtime Specific
 # * Reusable Components
-
----
-
-class: section
-
-# Demo
 
 ---
 
@@ -246,6 +284,12 @@ class: center, middle
 # * CSS & CSS Modules
 # * Globals Extraction
 # * Tests :P
+
+---
+
+class: section
+
+# Demo
 
 ---
 
