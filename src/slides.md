@@ -35,6 +35,14 @@ class: middle
 
 ---
 
+class: center, middle
+
+# JavaScript Fatigue
+## JavaScript Fatigue
+### JavaScript Fatigue
+
+---
+
 class: section
 
 # FrontEnd Delivery Complexity
@@ -51,21 +59,21 @@ background-image: url('public/monolith.jpg')
 
 ---
 
+class: center, middle, image-background
+background-image: url('public/microservices.jpg')
+
+.dark-mask.pull-left.white-title[
+## I know, I'll use microservices...
+]
+
+---
+
 class: middle, image-background
 background-image: url('public/modularity.jpg')
 
 .right.white-title.dark-mask[
 # Many projects
 # Many codebases
-]
-
----
-
-class: center, middle, image-background
-background-image: url('public/microservices.jpg')
-
-.dark-mask.pull-left.white-title[
-## I know, I'll use microservices...
 ]
 
 ---
@@ -310,6 +318,12 @@ class: center, middle
 class: section
 
 # Demo
+
+---
+
+class: section
+
+## .white-title[https://github.com/renderizrjs]
 
 ---
 
