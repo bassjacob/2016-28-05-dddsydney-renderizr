@@ -184,6 +184,26 @@ class: center, middle
 
 ---
 
+```javascript
+// import React, ReactDOMServer, Aphrodite etc.
+
+export default function render(props, renderizrId) {
+  return new Promise((res, rej) => {
+      const component = require('/path/to/entry').default;
+      const factory = React.createFactory(component);
+      const styles = StyleSheetServer.renderStatic(
+        () => ReactDOMServer.renderToString(factory(props))
+      );
+      const wrapped = wrap(className, props, renderizrId, styles);
+
+      return res(wrapped);
+    }
+  });
+}
+```
+
+---
+
 class: center
 
 # RenderizrJS: Registry
